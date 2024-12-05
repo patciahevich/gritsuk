@@ -30,3 +30,12 @@ ul {
 h1, h2, h3, p {
   margin: 0;
 }
+
+h2 {
+  margin-bottom: 20px;
+  
+  font-size: 42px;
+  font-weight: 800;
+  color: $gold;
+  text-align: center;
+}
