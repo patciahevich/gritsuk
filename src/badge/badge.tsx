@@ -1,6 +1,6 @@
-import './contacts.scss';
+import './badge.scss';
 
-function Contacts() {
+function Badge() {
   return (
     <div className='contacts_wrapper'>
       <span className='icon'/>
@@ -16,4 +16,4 @@ function Contacts() {
   )
 }
 
-export default Contacts
+export default Badge
