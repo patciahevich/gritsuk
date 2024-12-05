@@ -3,6 +3,7 @@ import './App.scss';
 import Main from './main/main';
 import License from './license/license';
 import About from './about/about';
+import Help from './help/help';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Main />
     <License/>
     <About/>
+    <Help/>
     </>
   );
 }

@@ -1,0 +1,16 @@
+.help {
+  position: relative;
+  color: black; 
+}
+
+.help::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../public/help.jpg);
+  background-size: cover;
+  opacity: 0.3;
+}

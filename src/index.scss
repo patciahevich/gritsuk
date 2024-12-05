@@ -33,9 +33,30 @@ h1, h2, h3, p {
 
 h2 {
   margin-bottom: 20px;
-  
+
   font-size: 42px;
   font-weight: 800;
   color: $gold;
   text-align: center;
+}
+
+section {
+  padding: 10px 60px;
+
+  & p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  & h3 {
+    padding: 20px 0;
+  }
+
+  & ul {
+    padding-bottom: 10px;
+
+    & li {
+      font-size: 20px;
+    }
+  }
 }
