@@ -11,6 +11,12 @@ header {
 
   background-color:#0C0C0E
 }
+
+@media screen and (max-width: 905px) {
+  header {
+    padding: 10px 30px;
+  }
+}
 @media screen and (max-width: 821px) {
   header {
     height: max-content;
