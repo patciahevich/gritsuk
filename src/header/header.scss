@@ -11,10 +11,11 @@ header {
 
   background-color:#0C0C0E
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
   header {
     height: max-content;
     flex-direction: column;
+    gap: 10px;
 
   }
 }
