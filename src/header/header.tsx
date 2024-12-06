@@ -1,12 +1,12 @@
 import Badge from '../badge/badge'
-import Nav from '../nav/nav'
+import Networks from '../networks/networks'
 import './header.scss'
 
 function Header() {
   return (
     <header>
       <Badge/>
-      <Nav/>
+      <Networks/>
     </header>
   )
 }

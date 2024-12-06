@@ -1,16 +1,10 @@
 .help {
   position: relative;
   color: black; 
+  background: linear-gradient(180deg, white 0%, rgba(12, 11, 11, 0) 100%), url(../../public/help.jpg) 100% / cover no-repeat;
+
+  li {
+    font-size: 24px;
+  }
 }
 
-.help::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(../../public/help.jpg);
-  background-size: cover;
-  opacity: 0.3;
-}

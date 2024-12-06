@@ -1,8 +1,6 @@
-@import '../index.scss';
 .main {
   width: 100%;
   height: 900px;
 
-  background-image: url(../../public/main.jpg);
-  background-size: cover;
+  background: linear-gradient(180deg, #0C0C0E 15%, rgba(12, 11, 11, 0) 50%), url(../../public/main.jpg) 10% / cover no-repeat;
 }

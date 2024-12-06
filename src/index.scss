@@ -1,14 +1,11 @@
-$gold: #ad854f;
-$decor_font: "Lobster", sans-serif;
-$main_font: "EB Garamond", serif;
-
+@use './utils/variables.scss';
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: $main_font;
+  font-family: variables.$main_font;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -36,27 +33,26 @@ h2 {
 
   font-size: 42px;
   font-weight: 800;
-  color: $gold;
+  color: variables.$gold;
   text-align: center;
 }
 
 section {
   padding: 10px 60px;
 
-  & p {
+  p {
     font-size: 24px;
     margin-bottom: 20px;
   }
 
-  & h3 {
+  h3 {
     padding: 20px 0;
+    font-size: 26px;
   }
 
-  & ul {
+  ul {
     padding-bottom: 10px;
-
-    & li {
-      font-size: 20px;
-    }
+    padding-left: 40px;
+    font-size: 20px;
   }
 }

@@ -1,8 +1,8 @@
-@import '../index.scss';
+@use '../utils/variables.scss';
 
 h1 {
   font-size: 54px;
-  font-family: $decor_font;
+  font-family: variables.$decor_font;
 }
 
 .hook {
@@ -22,4 +22,15 @@ h1 {
 
 h3 {
   font-weight: 800;
+}
+
+@media screen and (max-width:752px) {
+  .hook {
+    width: 90%;
+
+    margin-left: 20px;
+    margin-top: 150px;
+
+    word-break: break-word;
+  }
 }

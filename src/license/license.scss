@@ -1,13 +1,13 @@
-@import '../index.scss';
+@use '../utils/variables.scss';
 
 .license {
   width: 100%;
   padding: 30px 60px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  background-color: rgba($gold, 0.3);
+  background-color: rgba(variables.$gold, 0.3);
 }
 
 .clue {

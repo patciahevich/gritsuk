@@ -1,0 +1,30 @@
+.networks {
+  display: flex;
+  gap: 20px;
+}
+.network {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-size: cover;
+}
+
+#viber {
+  background-image: url(../../public/icons/viber.png);
+}
+#instagram {
+  background-image: url(../../public/icons/instagram.png);
+}
+#vk {
+  background-image: url(../../public/icons/vk.png);
+}
+#ok {
+  background-image: url(../../public/icons/ok.png);
+}
+#facebook {
+  background-image: url(../../public/icons/facebook.png);
+}
+#telegram {
+  background-image: url(../../public/icons/telegram.png);
+}

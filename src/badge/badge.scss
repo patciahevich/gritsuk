@@ -1,47 +1,62 @@
-.contacts_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.badge_wrapper {
+  display: grid;
+  grid-template-columns: 40px 1.5fr 1fr;
+  grid-template-areas: 
+  "icon name badge";
   gap: 20px;
 
-  & a {
-    color: black;
+  color: white;
+
+  a {
+    color: white;
   }
-  & .icon {
+  .icon {
+    grid-area: icon;
     width: 35px;
     height: 35px;
-    background-image: url(../../public/favicon.png);
+    background-image: url(../../public/icons/lawyer.png);
     background-size: cover;
   }
 
-  & .name {
+  .name {
+    grid-area: name;
     display: flex;
     flex-direction: column;
 
-    & .small_text {
+    .small_text {
       font-size: 14px;
       font-weight: 600;
     }
   }
 
-  & .contacts {
-    margin-left: 30px;
-    display: flex;
+  .badge {
+    grid-area: badge;
   }
 }
 
-@media screen and (max-width: 1065px) {
-  .contacts_wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+@media screen and (max-width: 8600px) {
+  .badge_wrapper {
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    ". name"
+    "icon badge";
+    column-gap: 10px;
+    row-gap: 0;
 
-    & .contacts {
+    .badge {
       margin-left: 0;
+      display: flex;
+      flex-direction: column;
     }
   }
 
-  .small_text{
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .small_text {
     display: none;
   }
 }
