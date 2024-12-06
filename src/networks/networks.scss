@@ -8,6 +8,7 @@
   height: 40px;
 
   background-size: cover;
+  transition: all 0.3s;
 }
 
 #viber {
@@ -27,4 +28,10 @@
 }
 #telegram {
   background-image: url(../../public/icons/telegram.png);
+}
+
+@media (hover: hover) {
+  .network:hover {
+    transform: rotate(360deg);
+  }
 }

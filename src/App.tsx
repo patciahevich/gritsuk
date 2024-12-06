@@ -4,6 +4,7 @@ import License from './license/license';
 import About from './about/about';
 import Help from './help/help';
 import Salary from './salary/salary';
+import Footer from './footer/footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <About/>
     <Help/>
     <Salary/>
+    <Footer/>
     </>
   );
 }

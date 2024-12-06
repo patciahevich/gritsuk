@@ -9,6 +9,8 @@
 
   a {
     color: white;
+    transform: scale(1);
+    transition: all 0.4s;
   }
   .icon {
     grid-area: icon;
@@ -59,4 +61,14 @@
   .small_text {
     display: none;
   }
+}
+
+
+@media (hover: hover) {
+  .badge_wrapper {
+    a:hover {
+      transform: scale(1.1);
+    }
+  }
+
 }
