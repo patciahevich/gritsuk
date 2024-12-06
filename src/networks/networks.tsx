@@ -2,8 +2,13 @@ import './networks.scss';
 
 const network = [
   {
-    id: 'vider',
+    id: 'viber',
     href: 'viber://chat?number=375447345474'
+  },
+
+  {
+    id: 'viber_mobile',
+    href: 'viber://add?number=375447345474'
   },
   {
     id: 'facebook',

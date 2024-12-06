@@ -11,7 +11,11 @@
   transition: all 1s;
 }
 
-#viber {
+#viber_mobile {
+  display: none;
+}
+
+#viber, #viber_mobile {
   background-image: url(../../public/icons/viber.png);
 }
 #instagram {
@@ -33,5 +37,26 @@
 @media (hover: hover) {
   .network:hover {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .networks {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #viber {
+    display: none
+  }
+
+  #viber_mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .networks {
+    gap: 10px;
   }
 }

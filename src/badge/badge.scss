@@ -36,20 +36,22 @@
   }
 }
 
-@media screen and (max-width: 8600px) {
+@media screen and (max-width: 768px) {
   .badge_wrapper {
+    margin-bottom: 10px;
+    
     grid-template-columns: 50px 1fr;
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    ". name"
     "icon badge";
     column-gap: 10px;
-    row-gap: 0;
 
     .badge {
       margin-left: 0;
       display: flex;
       flex-direction: column;
+    }
+    .name {
+      display: none;
     }
   }
 

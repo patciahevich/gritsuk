@@ -1,4 +1,5 @@
 import Badge from '../badge/badge'
+import Burger from '../burger/burger'
 import Networks from '../networks/networks'
 import './header.scss'
 
@@ -7,6 +8,7 @@ function Header() {
     <header>
       <Badge/>
       <Networks/>
+      <Burger/>
     </header>
   )
 }
