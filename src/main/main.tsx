@@ -1,3 +1,4 @@
+import Call from '../call/call';
 import Header from '../header/header';
 import Hook from '../hook/hook';
 import Nav from '../nav/nav';
@@ -9,6 +10,7 @@ function Main() {
       <Header/>
       <Nav/>
       <Hook/>
+      <Call/>
     </div>
   )
 }
