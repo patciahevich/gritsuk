@@ -18,6 +18,10 @@ h1 {
 
   color: white;
   font-size: 30px;
+  p {
+    font-size: 36px;
+    font-weight: 700;
+  }
 }
 
 h3 {
@@ -32,5 +36,19 @@ h3 {
     margin-top: 150px;
 
     word-break: break-word;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .hook {
+    p {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 48px;
+    }
   }
 }
