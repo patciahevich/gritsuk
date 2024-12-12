@@ -1,0 +1,108 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(black, 0.5);
+
+}
+
+.pop-up {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  overflow-y: scroll;
+
+  padding: 20px 40px;
+
+  background-color: white;
+  ul, li, p, h5 {
+    font-size: 18px;
+  }
+  li {
+    margin-left: 40px;
+  }
+  p, li {
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    .img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+
+      background-size: cover;
+    }
+  }
+  .accent {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .article {
+    text-decoration: underline;
+  }
+}
+
+.close-modal-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url(../../public/icons/close.png);
+  background-size: cover;
+
+  opacity: 0.5;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+@media screen and (width < 850px) {
+  .pop-up {
+    width: 550px;
+    height: 650px;
+    .title {
+      h2 {
+        font-size: 30px;
+      }
+      .img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+ 
+  }
+}
+
+@media screen and (width < 590px) {
+  .pop-up {
+    width: 90%;
+    height:80%;
+  }
+}
+
+@media screen and (width < 480px) {
+  .pop-up {
+    .title {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import burgerSlice from "./burgerSlice";
+import modalSlice from "./modalSlice";
 
 const store = configureStore({
   reducer: {
     burger: burgerSlice,
+    modal: modalSlice,
   },
 });
 

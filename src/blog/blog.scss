@@ -1,0 +1,34 @@
+@use "../utils/variables.scss";
+
+.blog {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  &.active {
+    height: max-content;
+  }
+}
+
+.more {
+  height: 40px;
+  margin-top: 20px;
+  button {
+    cursor: pointer;
+    width: 100%;
+    height: 80%;
+
+    border: none;
+    color: variables.$gold;
+    background-color: white;
+
+    text-align: center;
+
+    transition: all 0.4s;
+    &:hover {
+      background-color: rgba(variables.$gold, 0.4);
+    }
+  }
+}
