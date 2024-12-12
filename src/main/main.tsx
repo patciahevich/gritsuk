@@ -6,7 +6,7 @@ import './main.scss';
 
 function Main() {
   return (
-    <div className='main' id='main'>
+    <div className='main'>
       <Header/>
       <Nav/>
       <Hook/>

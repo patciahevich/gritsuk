@@ -6,6 +6,7 @@ import Help from './help/help';
 import Salary from './salary/salary';
 import Footer from './footer/footer';
 import Blog from './blog/blog';
+import Contacts from './contacts/contacts';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Main />
     <License/>
     <About/>
+    <Contacts/>
     <Help/>
     <Salary/>
     <Blog/>

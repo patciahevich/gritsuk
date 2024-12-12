@@ -8,8 +8,8 @@ function Nav() {
   
   return (
     <nav className={isOpen ? 'nav active' : 'nav'} onClick={() => dispatch(toggleBurger())}>
-      <a className="nav_link" href="#main">Главная</a>
       <a className="nav_link" href="#about">Обо мне</a>
+      <a className='nav_link' href='#contacts'>Контакты</a>
       <a className="nav_link"  href="#help">Виды помощи</a>
       <a className="nav_link" href="#salary">Гонорар</a>
       <a className="nav_link" href="#blog">Блог</a>

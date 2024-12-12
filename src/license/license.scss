@@ -64,6 +64,9 @@
     grid-template-areas: 
     "image title"
     "image desc";
+    p {
+      margin-bottom: 10px;
+    }
   }
 
   .clue_image {
@@ -71,5 +74,18 @@
    height: 40px;
 
    align-self: center;
+  }
+  .clue_desc {
+    margin-left: 10px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .clue_desc {
+    font-size: 16px;
+  }
+  .clue_title {
+    font-size: 20px;
   }
 }
