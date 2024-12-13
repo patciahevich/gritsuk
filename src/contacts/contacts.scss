@@ -1,3 +1,5 @@
+@use '../utils/variables.scss';
+
 .contacts_wrapper {
   display: flex;
   justify-content: space-around;
@@ -14,7 +16,11 @@
     gap: 20px;
 
     color: black;
+    font-weight: 700;
+
     cursor: pointer;
+
+    transition: all 0.4;
     .icon {
       width: 30px;
       height: 30px;
@@ -77,6 +83,14 @@
     .avatar {
       width: 300px;
       height: 300px;
+    }
+  }
+}
+
+@media (hover:hover) {
+  .contacts {
+    a:hover {
+      color: variables.$gold;
     }
   }
 }

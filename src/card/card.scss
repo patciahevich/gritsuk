@@ -1,6 +1,8 @@
 @use '../utils/variables.scss';
 
 .card {
+  cursor: pointer;
+
   width: 300px;
   height: 250px;
 
@@ -11,7 +13,11 @@
   border-radius: 10px;
   border: 1px solid black;
   overflow: hidden;
+
+  transition: all 0.4s;
+
   * {
+    margin: 0;
     color: white;
   }
 
@@ -22,24 +28,25 @@
     padding-right: 20px;
     font-size: 16px;
   }
-  button {
-    height: 40px;
-    cursor: pointer;
-
-    border: none;
-    background-color: variables.$gold;
-    opacity: 0.5;
-
-    transition: all 0.3s;
-    &:hover {
-      opacity: 1;
-    }
-  }
   .title {
-    height: 40%;
+    height: 50%;
     padding: 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgba(variables.$gold, 0.5);
 
+    transition: all 0.4s;
   }
+}
 
+@media (hover:hover) {
+  .card:hover {
+    transform: scale(0.95);
+
+    .title {
+      background-color: rgba(variables.$gold, 0.9);
+    }
+  }
 }

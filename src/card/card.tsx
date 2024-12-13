@@ -25,12 +25,12 @@ function Card(props: {post: BlogItem}) {
         open={open}
         close={handleClose}
     />
-    <div className='card' style={{ backgroundImage: `url(${props.post.url})`, backgroundSize: 'cover' }}>
+    <div className='card' style={{ backgroundImage: `url(${props.post.url})`, backgroundSize: 'cover' }} onClick={() => handleOpen(props.post)}>
       <div className='title'>
         <h2>{props.post.title}</h2>
         <h6>{`Статья  ${props.post.article} УК РБ`}</h6>
+        <p >Подробнее</p>
       </div>
-      <button onClick={() => handleOpen(props.post)}>Подробнее</button>
     </div>
   </>
  )
