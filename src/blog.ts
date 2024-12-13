@@ -46,7 +46,7 @@ export const blogContent: BlogData = [
   },
   {
     id: 3,
-    article: "1",
+    article: "147, 149, 153 УК РБ",
     url: "https://images.pexels.com/photos/29677628/pexels-photo-29677628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Умышленные телесные повреждения. Особенности.",
     content: [
@@ -183,7 +183,7 @@ export const blogContent: BlogData = [
   },
   {
     id: 8,
-    article: "2",
+    article: "212 УК РБ",
     url: "https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Хищение путем использования компьютерной техники",
     content: [
@@ -230,7 +230,7 @@ export const blogContent: BlogData = [
   },
   {
     id: 10,
-    article: "1",
+    article: "188 УК РБ, статья 10.2 КоАП РБ",
     url: "https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Клевета и оскорбление",
     content: [

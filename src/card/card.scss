@@ -21,9 +21,10 @@
     color: white;
   }
 
-  h2 {
+  h2, h6 {
     font-size: 18px;
   }
+ 
   p {
     padding-right: 20px;
     font-size: 16px;
@@ -38,6 +39,18 @@
     background-color: rgba(variables.$gold, 0.5);
 
     transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    .title {
+      height: 70%;
+      padding: 5px;
+      h6 {
+        font-size: 16px;
+      }
+    }
   }
 }
 
