@@ -28,7 +28,10 @@ function Card(props: {post: BlogItem}) {
     <div className='card' style={{ backgroundImage: `url(${props.post.url})`, backgroundSize: 'cover' }} onClick={() => handleOpen(props.post)}>
       <div className='title'>
         <h2>{props.post.title}</h2>
-        <h6>{`Статья  ${props.post.article}`}</h6>
+        {
+          props.post.article ? <h6>{`Статья  ${props.post.article}`}</h6> : null
+        }
+        
         <p >Подробнее</p>
       </div>
     </div>

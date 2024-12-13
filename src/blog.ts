@@ -1,6 +1,6 @@
 export type BlogItem = {
   id: number;
-  article: string;
+  article?: string;
   url: string;
   title: string;
   content: Array<string | { title: string; clauses: string[] }>;
@@ -11,7 +11,6 @@ type BlogData = BlogItem[];
 export const blogContent: BlogData = [
   {
     id: 1,
-    article: "11.1",
     url: "https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Горе от ума (история из практики)",
     content: [
@@ -31,7 +30,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 2,
-    article: "1",
     url: "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Отцы и дети (История из практики. Январь 2022г.)",
     content: [
@@ -82,7 +80,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 4,
-    article: "1",
     url: "https://images.pexels.com/photos/6065142/pexels-photo-6065142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Правила ознакомления с уголовным делом",
     content: [
@@ -102,7 +99,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 5,
-    article: "2",
     url: "https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Защитник в УПК РБ и обязательность его участия",
     content: [
@@ -136,7 +132,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 6,
-    article: "61",
     url: "https://images.pexels.com/photos/1602726/pexels-photo-1602726.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Конфискация…⁉️",
     content: [
@@ -158,7 +153,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 7,
-    article: "1",
     url: "https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Обыск: что нужно знать?",
     content: [
@@ -206,7 +200,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 9,
-    article: "2",
     url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Адвокат свидетеля",
     content: [
@@ -288,7 +281,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 12,
-    article: "1",
     url: "https://images.pexels.com/photos/3683053/pexels-photo-3683053.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Допрос в УПК",
     content: [
@@ -387,7 +379,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 16,
-    article: "1",
     url: "https://images.pexels.com/photos/8369520/pexels-photo-8369520.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Доказательства - работа адвоката",
     content: [
@@ -469,7 +460,6 @@ export const blogContent: BlogData = [
   },
   {
     id: 21,
-    article: "1",
     url: "https://images.pexels.com/photos/2052938/pexels-photo-2052938.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Неосновательное обогащение.",
     content: [
