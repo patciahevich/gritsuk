@@ -26,6 +26,7 @@ h1 {
 
 h3 {
   font-weight: 800;
+  font-family: variables.$decor_font;
 }
 
 @media screen and (max-width:752px) {
@@ -49,6 +50,14 @@ h3 {
     }
     h1 {
       font-size: 48px;
+    }
+  }
+}
+
+@media screen and (max-width:405px) {
+  .hook {
+    h1 {
+      font-size: 44px;
     }
   }
 }
