@@ -19,7 +19,9 @@ function BasicModal(props: {
             <div className='img' style={{backgroundImage: `url(${data.url})`}}/>
             <h2>{data.title}</h2>
           </div>
-          <p className='article'> {`Статья: ${data.article}`}</p>
+          {
+            data.article ? <p className='article'>{`Статья  ${data.article}`}</p> : null
+          }
           { data.content.map(item => {
             if(typeof item === 'string') {
               if (item.startsWith("!")) {
