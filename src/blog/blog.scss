@@ -1,5 +1,11 @@
 @use "../utils/variables.scss";
 
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #blog {
   display: flex;
   flex-direction: column;

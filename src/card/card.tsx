@@ -1,9 +1,9 @@
 import './card.scss';
-import { BlogItem} from '../blog';
 import { useState } from 'react';
 import BasicModal from '../modal/modal';
 import { useDispatch } from 'react-redux';
 import { setData } from '../store/modalSlice';
+import { BlogItem } from '../utils/types';
 
 
 function Card(props: {post: BlogItem}) {

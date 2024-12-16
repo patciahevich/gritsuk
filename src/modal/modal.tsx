@@ -1,7 +1,7 @@
 import './modal.scss';
 import { Modal } from '@mui/material';
-import { BlogItem} from '../blog';
 import { useSelector } from 'react-redux';
+import { BlogItem } from '../utils/types';
 
 type CloseModal = () => void;
 
