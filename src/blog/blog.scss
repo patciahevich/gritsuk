@@ -1,7 +1,16 @@
 @use "../utils/variables.scss";
 
+#blog {
+  display: flex;
+  flex-direction: column;
+}
+
 .blog {
   height: max-content;
+  max-width: 1200px;
+  
+  align-self: center;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
