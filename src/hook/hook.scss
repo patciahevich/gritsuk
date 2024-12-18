@@ -30,12 +30,12 @@ h5 {
   font-family: variables.$decor_font;
 }
 
-@media screen and (max-width:752px) {
+@media screen and (max-width:810px) {
   .hook {
     width: 90%;
 
     margin-left: 20px;
-    margin-top: 150px;
+    margin-top: 100px;
 
     word-break: break-word;
   }
@@ -58,7 +58,8 @@ h5 {
 @media screen and (max-width:405px) {
   .hook {
     h1 {
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 }
+
