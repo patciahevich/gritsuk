@@ -1,3 +1,4 @@
+import Slider from '../slider/slider';
 import './contacts.scss';
 
 function Contacts() {
@@ -25,7 +26,7 @@ function Contacts() {
             <span> Отзывы о работе</span>
           </a>
         </div>
-        <div className='avatar'/>
+        <Slider/>
       </div>
      
     </section>
