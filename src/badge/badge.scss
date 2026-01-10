@@ -1,0 +1,84 @@
+.badge_wrapper {
+  display: grid;
+  grid-template-columns: 40px 1.3fr 1fr;
+  grid-template-areas: 
+  "icon name badge";
+  gap: 20px;
+
+  color: white;
+
+  a {
+    color: white;
+    transform: scale(1);
+    transition: all 0.4s;
+  }
+  .icon {
+    grid-area: icon;
+    width: 35px;
+    height: 35px;
+    background-image: url(../../public/icons/lawyer.png);
+    background-size: cover;
+  }
+
+  .name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+
+    .small_text {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .badge {
+    grid-area: badge;
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .badge_wrapper {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .badge_wrapper {
+    margin-bottom: 10px;
+    
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: 
+    "icon badge";
+    column-gap: 10px;
+
+    .badge {
+      margin-left: 0;
+      flex-direction: column;
+    }
+    .name {
+      display: none;
+    }
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .small_text {
+    display: none;
+  }
+}
+
+
+@media (hover: hover) {
+  .badge_wrapper {
+    a:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

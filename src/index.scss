@@ -1,0 +1,83 @@
+@use './utils/variables.scss';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: variables.$main_font;
+  font-size: 16px;
+}
+
+#root {
+  margin: 0;
+}
+
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+
+  font-size: 42px;
+  font-weight: 800;
+  color: variables.$gold;
+  text-align: center;
+}
+
+section {
+  padding: 10px 60px;
+
+  p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    padding: 20px 0;
+    font-size: 26px;
+  }
+
+  ul {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 30px;
+  }
+  section {
+    h3 {
+      font-size: 20px;
+    }
+    p, li {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media screen and (max-width:370px) {
+  section {
+    padding: 10px, 30px;
+  }
+}

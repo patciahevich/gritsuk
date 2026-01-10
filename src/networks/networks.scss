@@ -1,0 +1,62 @@
+.networks {
+  display: flex;
+  gap: 20px;
+}
+.network {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-size: cover;
+  transition: all 1s;
+}
+
+#viber_mobile {
+  display: none;
+}
+
+#viber, #viber_mobile {
+  background-image: url(../../public/icons/viber.png);
+}
+#instagram {
+  background-image: url(../../public/icons/instagram.png);
+}
+#vk {
+  background-image: url(../../public/icons/vk.png);
+}
+#ok {
+  background-image: url(../../public/icons/ok.png);
+}
+#facebook {
+  background-image: url(../../public/icons/facebook.png);
+}
+#telegram {
+  background-image: url(../../public/icons/telegram.png);
+}
+
+@media (hover: hover) {
+  .network:hover {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .networks {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #viber {
+    display: none
+  }
+
+  #viber_mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .networks {
+    gap: 10px;
+  }
+}

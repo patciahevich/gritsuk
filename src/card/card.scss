@@ -1,0 +1,65 @@
+@use '../utils/variables.scss';
+
+.card {
+  cursor: pointer;
+
+  width: 300px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+
+  transition: all 0.4s;
+
+  * {
+    margin: 0;
+    color: white;
+  }
+
+  h2, h6 {
+    font-size: 18px;
+  }
+ 
+  p {
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  .title {
+    height: 50%;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(variables.$gold, 0.5);
+
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    .title {
+      height: 70%;
+      padding: 5px;
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (hover:hover) {
+  .card:hover {
+    transform: scale(0.95);
+
+    .title {
+      background-color: rgba(variables.$gold, 0.9);
+    }
+  }
+}

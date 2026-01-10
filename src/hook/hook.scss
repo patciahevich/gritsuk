@@ -1,0 +1,65 @@
+@use '../utils/variables.scss';
+
+h1 {
+  font-size: 54px;
+  font-family: variables.$decor_font;
+}
+
+.hook {
+  width: 600px;
+  height: 200px;
+
+  margin-top: 200px;
+  margin-left: 150px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  p {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+h5 {
+  font-weight: 800;
+  font-family: variables.$decor_font;
+}
+
+@media screen and (max-width:810px) {
+  .hook {
+    width: 90%;
+
+    margin-left: 20px;
+    margin-top: 100px;
+
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .hook {
+    p {
+      font-size: 25px;
+    }
+    h5 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  }
+}
+
+@media screen and (max-width:405px) {
+  .hook {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+

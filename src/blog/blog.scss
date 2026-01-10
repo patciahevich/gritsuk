@@ -1,0 +1,45 @@
+@use "../utils/variables.scss";
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog {
+  height: max-content;
+  max-width: 1200px;
+  
+  align-self: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.more {
+  height: 40px;
+  margin-top: 20px;
+  button {
+    cursor: pointer;
+    width: 100%;
+    height: 80%;
+
+    border: none;
+    color: variables.$gold;
+    background-color: white;
+
+    text-align: center;
+
+    transition: all 0.4s;
+    &:hover {
+      background-color: rgba(variables.$gold, 0.4);
+    }
+  }
+}
